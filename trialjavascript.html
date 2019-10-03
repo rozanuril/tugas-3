@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <!--kode (tag script) tersebut pada dasarnya berfungsi untuk menambahkan sebuah kalimat 
+        kedalam halaman web setelah halaman web tampil di web browser-->
+
+    <!--JavaScript menyediakan 4 alternatif, yaitu:
+1. Menggunakan tag <script> (internal JavaScript)
+2. Menggunakan tag <script scr=””> (external JavaScript)
+3. Menggunakan Event Handler (Inline JavaScript)
+4. Menggunakan URL (href:=”javascript:”)-->
+
+        <head>
+            <title>Belajar JavaScript di Jti.polije</title>
+            <script type="text/javascript">
+            function tambah_semangat()
+            {
+            var a=document.getElementById("div_semangat");
+            a.innerHTML+="<p>Sedang Belajar JavaScript,Semangat...!!!</p>";
+            }
+            </script>
+        </head>
+    <body>
+        <h1>Belajar JavaScript</h1>
+        <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+        Klik tombol ini untuk menambahkan kalimat baru:
+        <button id="tambah"
+        onclick="tambah_semangat()">Semangaat..!!</button>
+        <div id="div_semangat"></div>
+    </body>
+</html>

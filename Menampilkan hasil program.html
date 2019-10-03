@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <!--Pertama, kita harus membuat sebuah tag ‘container’, atau tag penampung untuk hasil program JavaScript. 
+        Tag container ini bisa berupa tag HTML apapun, seperti tag paragraf<p> atau tag<div>-->
+    <!--Kedua, kita harus mencari elemen ‘container’ ini dari JavaScript.-->
+    <!--Ketiga, adalah menginputkan hasil program kedalam tag ‘container’ dengan menggunakan properti innerHTML.-->
+        
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Belajar JavaScript</title>
+            <script>
+            window.onload = function()
+            {
+            var hasil;
+            hasil = "Hasilnya seperti kalimat ini";
+            document.getElementById("tempat_hasil").innerHTML=hasil;
+          
+            }
+            </script>
+        </head>
+    <body>
+        <h1>Belajar JavaScript</h1>
+        <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+        <div id="tempat_hasil">
+        </div>
+    </body>
+</html>
